@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    gap: 40px;
+}
+
+.column {
+    flex: 1;
+    padding: 15px;
+    background: #a94747;
+    border-radius: 16px;
+    min-height: 600px;
+}
+.austria {
+    background: #a94747;
+    color: #fff;
+}
+.germany {
+    background: #a94747;
+    color: #fff;
+}
+.switzerland {
+    background: #a94747;
+    color: #fff;
+}
+.my-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #a94747;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+*{text-decoration: solid;}
+navbar {
+    background-color: #ecd4d1;
+    overflow: hidden;
+}
+navbar a {
+    float: left;
+    display: block;
+    color: #a94747;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+navbar a.active {
+    background-color: #a94747;
+    color: white;
+}
+nav {
+    display: block;
+    width: 100%;
+    background-color: rgb(169, 71, 71);
+    padding: 16px 0;
+    text-align: center;
+}
+nav a {
+    margin: 0 40px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #000000;
+}
