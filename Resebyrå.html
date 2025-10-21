@@ -8,44 +8,6 @@
         body {
             background-color: rgb(236, 212, 209);
         }
-        .navbar-top {
-            display: flex; 
-            align-items: center;
-            width: 100%;
-            background-color: #a94747;
-            padding: 16px 0;
-            text-align: center;
-            justify-content: flex-start; 
-        }
-        .navbar-top img {
-            height: 200px; 
-            margin-right: 30px;
-        }
-        .navbar-top h1 {
-            font-size: 6rem; 
-            margin: 0;
-            color: #fff;
-            flex: 1;
-            text-align: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
-        .navbar-links {
-            display: block;
-            width: 100%;
-            background-color: #a94747;
-            padding: 16px 0;
-            text-align: center;
-            margin-top: 20px; /* distans mellan navbarerna */
-        }
-        .navbar-links a {
-            margin: 0 40px;
-            text-decoration: j;
-            color: #ffffff;
-            font-weight: bold;
-        }
-        :hover {
-            color: #000000;
-        }
     </style>
 </head>
 <body>
@@ -53,7 +15,7 @@
         <img src="ÖST.png" alt="Logotyp" width="200" height="200">
         <h1>Resebyrå</h1>
     </nav>
-    <nav class="navbar-links">
+    <nav class="navbar-links" id="main-nav">
         <a href="Resebyrå.html">Hem</a>
         <a href="tyskland.html">Tyskland</a>
         <a href="osterrike.html">Österrike</a>
@@ -62,7 +24,7 @@
         <a href="omoss.html">Om oss</a>
     </nav>
     <h1> <Strong>Reseguiden för centraleuropieska länder</Strong> </h1>
-    <p>Här kommer en guide till dig som vill resa till centraleuropa</p>
+    <p id="guide-text">Här kommer en guide till dig som vill resa till centraleuropa</p>
     <link rel="stylesheet" href="style.css">
 <br>
     <div class="container">
@@ -115,7 +77,6 @@
             <br>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 <Footer>
     <div class="footer-container">

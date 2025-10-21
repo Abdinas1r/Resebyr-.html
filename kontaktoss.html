@@ -25,6 +25,9 @@
             color: #ffffff;
             font-weight: bold;
         }
+        :hover {
+            color: #000000;
+        }
         </style>
     <style>
          body {
@@ -55,9 +58,69 @@
             border-radius: 12px;
             box-shadow: 0 4px 16px rgba(236, 212, 209, 0.1);
         }
+           .hamburger {
+            display: none;
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            top: 18px;
+            right: 24px;
+            z-index: 1001;
+        }
+        .hamburger span,
+        .hamburger span:before,
+        .hamburger span:after {
+            display: block;
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            background: #a94747;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        .hamburger span {
+            top: 14px;
+        }
+        .hamburger span:before {
+            content: '';
+            top: -10px;
+        }
+        .hamburger span:after {
+            content: '';
+            top: 10px;
+        }
+        #menu-toggle {
+            display: none;
+        }
+@media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                background-color: #a94747;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+            }
+            #menu-toggle:checked + .hamburger + nav {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+            h1 {
+                color: #a94747;
+            }
+        }
     </style>
 </head>
 <body>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="hamburger" for="menu-toggle">
+        <span></span>
+    </label>
     <Nav>
         <a href="Resebyrå.html">Hem</a>
         <a href="tyskland.html">Tyskland</a>

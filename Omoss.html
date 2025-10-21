@@ -25,9 +25,79 @@
             color: #ffffff;
             font-weight: bold;
         }
+        :hover {
+            color: #000000;
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+            max-width: 80%;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px #ecd4d1;
+        }
+           .hamburger {
+            display: none;
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            top: 18px;
+            right: 24px;
+            z-index: 1001;
+        }
+        .hamburger span,
+        .hamburger span:before,
+        .hamburger span:after {
+            display: block;
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            background: #a94747;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        .hamburger span {
+            top: 14px;
+        }
+        .hamburger span:before {
+            content: '';
+            top: -10px;
+        }
+        .hamburger span:after {
+            content: '';
+            top: 10px;
+        }
+        #menu-toggle {
+            display: none;
+        }
+@media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                background-color: #a94747;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+            }
+            #menu-toggle:checked + .hamburger + nav {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+            h1 {
+                color: #a94747;
+            }
+        }
     </style>
 </head>
 <body>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="hamburger" for="menu-toggle">
+        <span></span>
+    </label>
     <Nav>
         <a href="Resebyrå.html">Hem</a>
         <a href="tyskland.html">Tyskland</a>
@@ -36,7 +106,15 @@
         <a href="kontaktoss.html">Kontakt</a>
         <a href="omoss.html">Om oss</a>
     </Nav> 
+    <div class="content">
+        <h1>Om Oss</h1>
+        <p>Välkommen till vår resebyrå! Vi är ett passionerat team av reseentusiaster som älskar att hjälpa människor att upptäcka världen. Vår målsättning är att erbjuda skräddarsydda reseupplevelser som skapar minnen för livet.</p>
+        <p>Vi har lång erfarenhet inom resebranschen och samarbetar med pålitliga partners för att säkerställa att våra kunder får den bästa servicen och de mest unika upplevelserna. Oavsett om du drömmer om en avkopplande strandsemester, en kulturell stadsvandring eller ett äventyr i naturen, så har vi något för dig.</p>
+        <p>Vårt team består av kunniga och engagerade medarbetare som alltid är redo att hjälpa dig med allt från planering till bokning och support under din resa. Vi tror på personlig service och strävar efter att överträffa dina förväntningar.</p>
+        <p>Tack för att du väljer vår resebyrå. Vi ser fram emot att hjälpa dig att skapa din nästa oförglömliga resa!</p>
     </div>
-    <h1>Jag är en student </h1>
+    <div>
+        <iframe src="https://youtu.be/SFPyXkwWsQY?si=Z86dVh7DIr5PyCTQ" width="420" height="315" allowfullscreen></iframe>
+    </div>
 </body>
 </html>

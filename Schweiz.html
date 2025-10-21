@@ -25,9 +25,72 @@
             color: #ffffff;
             font-weight: bold;
         }
+        :hover {
+            color: #000000;
+        }
+           .hamburger {
+            display: none;
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            top: 18px;
+            right: 24px;
+            z-index: 1001;
+        }
+        .hamburger span,
+        .hamburger span:before,
+        .hamburger span:after {
+            display: block;
+            position: absolute;
+            height: 4px;
+            width: 100%;
+            background: #a94747;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        .hamburger span {
+            top: 14px;
+        }
+        .hamburger span:before {
+            content: '';
+            top: -10px;
+        }
+        .hamburger span:after {
+            content: '';
+            top: 10px;
+        }
+        #menu-toggle {
+            display: none;
+        }
+@media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                background-color: #a94747;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+            }
+            #menu-toggle:checked + .hamburger + nav {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+            h1 {
+                color: #a94747;
+            }
+        }
     </style>
 </head>
 <body>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="hamburger" for="menu-toggle">
+        <span></span>
+    </label>
     <Nav>
         <a href="Resebyrå.html">Hem</a>
         <a href="tyskland.html">Tyskland</a>
@@ -39,8 +102,8 @@
     <h1>Schweiz</h1 color="#a94747">
     <br>
     <br>
-    <img src="Schweiz1.png" alt="schweiz" width="50%"   height="50%">
-    <img src="Schweiz4.jpg" alt="schweiz" width="50%"   height="50%">
+    <img src="Schweiz1.png" alt="schweiz" width="300">
+    <img src="Schweiz4.jpg" alt="schweiz" width="300">
     <br>
     <br>
     <p>Schweiz, officiellt Konfederationen Schweiz, är en federal republik i Centraleuropa. Landet är känt för sin natursköna skönhet, inklusive Alperna, sjöar och gröna dalar. Schweiz är också känt för sin höga levnadsstandard, banksektor, choklad och klocktillverkning. Landet har fyra officiella språk: tyska, franska, italienska och rätoromanska. Schweiz är känt för sin neutralitetspolitik och har inte deltagit i några militära konflikter sedan 1815. Landet är också hem för många internationella organisationer, inklusive Röda Korset och FN:s europeiska huvudkontor i Genève.</p>
