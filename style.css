@@ -28,17 +28,17 @@
             margin-top: 20px; 
         }
         .navbar-links a {
-            margin: 0 40px;
-            text-decoration: j;
+            margin: 0 40px; 
+            text-decoration: none;
             color: #ffffff;
             font-weight: bold;
         }
         .navbar-links a:hover {
             color: #000000;
         }
-        :hover {
-            color: #000000;
-        }
+        .navbar-links a.hover {
+            text-decoration: underline;
+        }        
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -76,6 +76,9 @@
     cursor: pointer;
 }
 *{text-decoration: solid;}
+.rund-bild {
+    border-radius: 15px;
+}
 @media (max-width: 768px) {
     .navbar-top {
         flex-direction: column;
