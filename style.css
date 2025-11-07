@@ -79,6 +79,13 @@
 .rund-bild {
     border-radius: 15px;
 }
+.paragraf {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    padding: 5px;
+}
 @media (max-width: 768px) {
     .navbar-top {
         flex-direction: column;
