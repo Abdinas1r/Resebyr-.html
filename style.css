@@ -86,6 +86,46 @@
     margin-bottom: 15px;
     padding: 5px;
 }
+.details {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.summary {
+    font-weight: bold;
+    color: #a94747;
+    cursor: pointer;
+}
+
+.details[open] summary {
+    color: #000;
+}
+
+.details p {
+    margin-top: 10px;
+}
+
+.footer {
+  background-color: #a94747;
+  color: white;
+  padding: 10px 0;
+  font-size: 11px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 15px;
+  gap:10px;
+}
+
 @media (max-width: 768px) {
     .navbar-top {
         flex-direction: column;
